@@ -1,0 +1,254 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+/* pokemon colors */
+  --poke-red:#ff0000;
+  --poke-red2:#cc0000;
+  --poke-blue: #3b4cca;
+  --poke-blue2: #2534a5;
+  --poke-yellow: #ffde00;
+  --poke-yellow2:#b3a125;
+/*  */
+  --clr-black: #222;
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.45rem;
+  --light-shadow: 0 15px 25px rgba(0, 0, 0, 0.8);
+  --dark-shadow: 10px 15px 35px rgba(0, 0, 0, 1.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff-secondary);
+  background: var(--poke-yellow);
+  color: var(--poke-red2);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 3rem;
+  color: var(--poke-blue);
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 1.5rem;
+  color: var(--poke-red2);
+}
+p {
+  margin-bottom: 1.5rem;
+  color: var(--poke-red2);
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1.8rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+/*  global classes */
+
+/* section */
+.section {
+  padding: 5rem 0;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+/*
+=============== 
+Reviews
+===============
+*/
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.title {
+  /* display: inline-block; */
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.underline {
+  height: 0.25rem;
+  width: 25rem;
+  background: var(--poke-blue);
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  width: 80vw;
+  margin-bottom: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background:var(--poke-yellow);
+  /* height: 40vw; */
+  /* max-width: var(--fixed-width); */
+}
+.personaje {
+  flex: 1;
+  width:80%;
+  margin: 20px;
+  background:var(--poke-blue);
+  padding: 1.5rem 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+  transition: var(--transition);
+  text-align: center;
+}
+.personaje:hover {
+  box-shadow: var(--dark-shadow);
+}
+.img-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  text-align: center;
+  margin: auto;
+}
+#person-img {
+  display: block;
+  max-width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+  background-color: var(--poke-yellow);
+}
+
+.capturado{
+  transition: 50ms;
+  background-image: url("./Sin-título.ico");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.capturado-btn{
+  width: 200px;
+  height: 50px;
+  margin-top: 1rem;
+  background: var(--poke-red2);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  text-transform: capitalize;
+  border-radius: var(--radius);
+  transition: var(--transition);
+  border-color: var(--poke-red);
+  cursor:not-allowed;
+}
+
+#nombre {
+  margin-bottom: 0.25rem;
+  color: var(--clr-black);
+}
+#raza {
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  color: var(--poke-yellow2);
+  font-size: 1rem;
+}
+#info {
+  margin-bottom: 0.75rem;
+  color: var(--clr-black);
+}
+
+.random-btn {
+  width: 200px;
+  height: 50px;
+  margin-top: 1rem;
+  background: var(--poke-yellow2);
+  color: var(--poke-blue2);
+  padding: 0.25rem 0.5rem;
+  text-transform: capitalize;
+  border-radius: var(--radius);
+  transition: var(--transition);
+  border-color: var(--poke-red);
+  cursor: pointer;
+}
+.random-btn:hover {
+  scale: 1.1;
+  background: var(--poke-blue2);
+  color: var(--poke-yellow);
+  
+}
