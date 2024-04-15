@@ -1,0 +1,67 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.titulo {
+  width: 300px;
+  margin-right: 10px;
+  background-color:  #6c5ccc;
+  color: white;
+}
+
+.titulo > h2 {
+  padding: 11px 0;
+}
+
+.width-250-shadow {
+  width: 250px;
+  box-shadow: 2px 2px 2px black;
+}
+
+.contenedor-tabla {
+  margin: 0;
+  margin-top: 10px;
+}
+
+.b-red {
+  border: 3px solid red;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead > tr > th {
+  border-width: 0;
+}
+
+th {
+  background-color: pink;
+}
+
+td {
+  padding-left: 5px;
+  font-family: Impact;
+}
+
+td:first-child {
+  width: 15%;
+  background-color: hotpink;
+}
+
+td:nth-child(2) {
+  width: 60%;
+}
+
+td:nth-child(3) {
+  width: 25%;
+}
+
+#reproduciendo {
+  background-color: yellow;
+  font-weight: bold;
+  color: red;
+  box-shadow: 2px 2px 2px black;
+  text-shadow: black 3px 3px;
+}

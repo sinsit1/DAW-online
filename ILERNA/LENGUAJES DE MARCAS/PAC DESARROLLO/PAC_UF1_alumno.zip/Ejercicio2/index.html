@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css">
+      <title>Ejercicio 2 lenguaje de marcas</title>
+   </head>
+   <body>
+		<div class="titulo-container ">
+			<h1 class="titulo">Ejercicio 2. Venta de entradas</h1>
+		</div>
+      <form method="get" action="pago_finalizado.html" class="formulario-pago">
+         <fieldset class="agrupacion">
+            <legend class="encabezado">Entradas</legend>
+            <div>
+               <label for='numEntradas'>Número de entradas</label>
+               <select name="numEntradas">
+                  <option value="1" selected>1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+               </select>
+            </div>
+            <br>
+            <div>
+               <label for='tipoEntradas'>Categoria</label><br>
+               <select name="tipoEntradas">
+                  <option value="Pista" selected>Pista</option>
+                  <option value="Gradas">Gradas</option>
+                  <option value="Palcos">Palcos</option>
+               </select>
+            </div>
+         </fieldset>
+         <fieldset class="agrupacion">
+            <legend class="encabezado">Datos del comprador:</legend>
+            <div class="input-container">
+               <label for='nombre'>Nombre:</label>
+               <input type='text' required id='nombre' name='nombre' pattern='[a-zA-Z]+'><br>
+            </div>
+            <div class="input-container">
+               <label for='apellidos'>Apellidos:</label>
+               <input type='text' id='apellidos' name='apellidos' pattern='[a-zA-Z]+'><br>
+            </div>
+            <div class="input-container">
+               <label for='email'>Email:</label>
+               <input type='text' id='email' name='email' pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"><br>
+            </div>
+            <div>
+               <label for='fechaNacimiento'>Fecha de nacimiento</label>
+               <input type='date' id='fechaNacimiento' value ='Fecha Nacimiento'><br>
+            </div>
+         </fieldset>
+         <fieldset class="agrupacion">
+            <legend class="encabezado">Pago</legend>
+            <div class="input-container">Selecciona método de pago:</div>
+            <div>
+               <label>
+               <input type="radio" name="tipoPago" value="visa" checked> 
+               <img src="img/visaLogo.png" alt="visa image" class="pay-img">
+               </label><br>
+               <label>
+               <input type="radio" name="tipoPago" value="mastercard" > 
+               <img src="img/masterLogo.png" alt="mastercard image" class="pay-img">
+               </label><br>
+               <label>
+               <input type="radio" name="tipoPago" value="Paypal" > 
+               <img src="img/paypalLogo.png" alt="paypal image" class="pay-img">
+               </label><br>
+               <label>
+               <input type="radio" name="tipoPago" value="Bizum" > 
+               <img src="img/bizumLogo.jpg" alt="bizum image" class="pay-img">
+               </label><br>
+            </div>
+            <div class="input-container">
+               <label><input type='checkbox' name='aceptoCondiciones' value='true'>Acepto las condiciones de compra</label>
+            </div>
+            <input type='submit' class="boton-azul" value='Proceder al pago'> 
+         </fieldset>
+      </form>
+   </body>
+</html>

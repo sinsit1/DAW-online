@@ -1,0 +1,52 @@
+[
+    {
+        "pais": "Alemania",
+        "artista": "Malik Harris",
+        "idioma": ["ingles"],
+        "video": "D3FN2umFaM8",
+        "titulo": {
+            "original": "Rockstars",
+            "castellano": "Estrellas del rock"
+        }
+    },
+    {
+        "pais": "España",
+        "artista": "Chanel",
+        "idioma": ["español", "ingles"],
+        "video": "T02yGXVQCfo",
+        "titulo": {
+            "original": "SloMo",
+            "castellano": "Cámara lenta"
+        }
+    },
+    {
+        "pais": "Finlandia",
+        "artista": "The Rasmus",
+        "idioma": ["ingles"],
+        "video": "XtMfCf3vFbc",
+        "titulo": {
+            "original": "Jezebel",
+            "castellano": "Jezebel"
+        }
+    },
+    {
+        "pais": "Italia",
+        "artista": "Mahmood & Blanco",
+        "idioma": ["Italiano"],
+        "video": "4MgMhzfUmiA",
+        "titulo": {
+            "original": "Brividi",
+            "castellano": "í"
+        }
+    },
+    {
+        "pais": "Ucrania",
+        "artista": "Kalush Orchstra",
+        "idioma": ["Ucraniano"],
+        "video": "UiEGVYOrulk",
+        "titulo": {
+            "original": "Stefania",
+            "castellano": "Estefanía"
+        }
+    }
+]

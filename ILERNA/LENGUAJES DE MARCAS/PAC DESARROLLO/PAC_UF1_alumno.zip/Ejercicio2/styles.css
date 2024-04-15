@@ -1,0 +1,43 @@
+.pay-img {
+	width: 50px;
+}
+
+.titulo-container {
+	margin-right: 10px;
+	background-color: #6c5ccc;
+	color: white;
+}
+
+.titulo {
+	padding: 10px 0;
+}
+
+.formulario-pago {
+	background-color: #88ccec;
+	font-family: Calibri;
+	font-weight: bold;
+	color: darkblue;
+}
+
+.agrupacion {
+	padding: 18px;
+}
+
+.encabezado {
+	font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.input-container {
+	margin: 12px 0
+}
+
+.boton-azul {
+	padding: 25px;
+	background-color: darkblue;
+	color: skyblue;
+	font-size: 2em;
+}
+.link {
+    text-decoration: none;
+    font-family: Impact, Arial, sans-serif;
+}
